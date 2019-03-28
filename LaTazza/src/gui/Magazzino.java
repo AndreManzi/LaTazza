@@ -23,8 +23,8 @@ public class Magazzino {
 		mag.put(Tipocialda.the,init);
 		mag.put(Tipocialda.the_limone,init);
 	}
-	public HashMap<Tipocialda,Integer> getM(Tipocialda c) {
-		return mag;
+	public Integer getM(Tipocialda c) {
+		return mag.get(c);
 	}
 
 	public void setM(Vendita v) {

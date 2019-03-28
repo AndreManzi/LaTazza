@@ -37,4 +37,16 @@ public class Pan5 extends MyPanel {
 		
 	}
 
+	public void aggiungiPersonale(Model model) {
+			if(model.checkPersonale(nomevisitatore.getText())) {
+				model.addPersonale(nomevisitatore.getText());
+				initView(model);
+				//ok
+			}
+			initView(model);
+			//non ok
+	}
+
+	
+
 }

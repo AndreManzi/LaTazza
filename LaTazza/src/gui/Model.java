@@ -91,4 +91,16 @@ public  class Model {
 		c.addMoney(new Euro(q*0.50));
 		
 	}
+
+	public void addPersonale(String string) {
+		p.add(new Personale(string));
+	}
+
+	public boolean checkPersonale(String text) {
+		for(int i=0;i<p.size();i++)
+			if(p.get(i).getName().equals(text))
+				return false;
+		return true;
+		
+	}
 }

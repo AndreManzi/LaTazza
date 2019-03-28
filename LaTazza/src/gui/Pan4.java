@@ -1,12 +1,7 @@
 package gui;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
-import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
-import javax.swing.JTextField;
 
 public class Pan4 extends MyPanel {
 	/**
@@ -23,7 +18,7 @@ public class Pan4 extends MyPanel {
 		 * o nomepersonale mi si aggiorna in tempo reale il label con il debito!
 		 * Vuole i campi commentati static, ma se li metto static 
 		 * nelle altre pagine non mi funzionano correttamente.
-		 * Non riesco a stampare la disponibilà nel magazzino nè debito della data persona.
+		 * Non riesco a stampare la disponibilï¿½ nel magazzino nï¿½ debito della data persona.
 		 */
 		
 		//cassa
@@ -37,7 +32,7 @@ public class Pan4 extends MyPanel {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				// TODO Auto-generated method stub
-				//disponibilita.setText("Disponibilità: " + gui.Pan4.tipocialda.getSelectedItem());
+				//disponibilita.setText("Disponibilitï¿½: " + gui.Pan4.tipocialda.getSelectedItem());
 			}
 	    });*/
 		disponibilita=new JLabel();
@@ -74,7 +69,7 @@ public class Pan4 extends MyPanel {
 		
 		addItems(m.getCap(), tipocialda);
 		disponibilita.setText("PROVA Disponibilita: ");
-		//disponibilita.setText("Disponibilità: " + gui.Pan4.tipocialda.getSelectedItem());
+		//disponibilita.setText("Disponibilitï¿½: " + gui.Pan4.tipocialda.getSelectedItem());
 		
 		addItems(m.getP(), nomepersonale);
 		debito.setText("PROVA Debito: ");
@@ -86,12 +81,11 @@ public class Pan4 extends MyPanel {
 	public void visualizzaDebito(Model m) {
 		// TODO Auto-generated method stub
 		debito.setText("Debito: " + m.getP().get(nomepersonale.getSelectedIndex()).getDebito().stampa());
-		//restituire in Euro il debito della persona
 	}
 
 	public void visualizzaDisponbilita(Model m) {
 		// TODO Auto-generated method stub
-		debito.setText("Disponibilita: " + m.getMag().getM( ));
+		//debito.setText("Disponibilita: " + m.getMag().getM(tipocialda.)));
 	}
 	
 	

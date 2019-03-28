@@ -2,7 +2,6 @@ package gui;
 
 import javax.swing.JFrame;
 import javax.swing.JTabbedPane;
-import javax.swing.JTextField;
 
 public class View {
 	 
@@ -126,5 +125,15 @@ public void visualizzaDebito(Model m) {
 
 public void visualizzaDisponbilita(Model m) {
 	stateof.visualizzaDisponbilita(m);
+}
+public void aggiungiPersonale(Model model) {
+	 addp.aggiungiPersonale(model);
+}
+public void aggiornaPersonale(Model model) {
+	reg_ven_cia.initView(model);
+	 reg_pag.initView(model);
+	 remp.initView(model);
+	
+	
 }
 }
